@@ -131,11 +131,6 @@ _unix_excludes = set([
     r'libutil\.so(\..*)?',
     # libGL can reference some hw specific libraries (like nvidia libs).
     r'libGL\..*',
-    # libxcb-dri changes ABI frequently (e.g.: between Ubuntu LTS releases) and
-    # is usually installed as dependency of the graphics stack anyway. No need
-    # to bundle it.
-    r'libxcb\.so(\..*)?',
-    r'libxcb-dri.*\.so(\..*)?',
 ])
 
 _aix_excludes = set([
